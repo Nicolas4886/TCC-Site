@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos Educativos Divertidos</title>
+    <title>Learn Games</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Fontes do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&family=Patrick+Hand&display=swap" rel="stylesheet">
     <style>
         :root {
-            --cor-principal: #CC5200;
-            --cor-secundaria: #E65C00;
+            --cor-principal: #FF8C00;
+            --cor-secundaria: #CC5200;
             --cor-clara: #FFD699;
         }
         
@@ -22,13 +22,33 @@
         
         .titulo-principal {
             font-family: 'Fredoka One', cursive;
-            color: var(--cor-principal);
+            color: #FF8533;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-size: 2.8rem;
         }
         
         .subtitulo {
             font-family: 'Comic Neue', cursive;
-            color: var(--cor-secundaria);
+            color: white;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .btn-menu {
+            background-color: var(--cor-botao);
+            border: none;
+            font-family: 'Fredoka One', cursive;
+            border-radius: 50px;
+            padding: 10px 25px;
+            color: white;
+            margin: 0 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-menu:hover {
+            background-color: #CC5200;
+            transform: translateY(-2px);
         }
         
         .card-jogo {
@@ -62,9 +82,10 @@
         }
         
         .header {
-            background: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria));
-            padding: 20px 0;
+            background: linear-gradient(to right, var(--cor-principal), #CC5200);
+            padding: 40px 0 30px 0; /* Aumentei o padding para o cabeçalho maior */
             border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
         }
         
         .emoji {
@@ -96,14 +117,35 @@
     <!-- Cabeçalho -->
     <header class="header text-white text-center mb-5">
         <div class="container">
-            <h1 class="titulo-principal display-4 mb-3">Jogos Educativos Divertidos! <span class="emoji">🎮</span></h1>
-            <p class="subtitulo lead">Aprenda brincando com nossos jogos incríveis!</p>
+            <h1 class="titulo-principal display-4 mb-3">Learn Games <span class="emoji">🎮</span></h1>
+            <p class="subtitulo lead">Uma plataforma onde você encontra tanto conhecimento quanto diversão</p>
+
+            <!-- Botões do Menu -->
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="#" class="btn btn-menu">Jogos</a>
+                <a href="#" class="btn btn-menu">Sobre</a>
+                <a href="#" class="btn btn-menu">Contato</a>
+            </div>
         </div>
     </header>
     
     <!-- Decoracoes -->
     <div class="decoracao decoracao-1">🌟</div>
     <div class="decoracao decoracao-2">🎲</div>
+
+    <section class="container my-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="titulo-jogos" style="font-family: 'Comic Neue', cursive; 
+                                              color: #000000; 
+                                              font-size: 1.8rem; 
+                                              font-weight: 700;
+                                              margin-bottom: 0.5rem;">
+                    Jogos principais
+                </h2>
+            </div>
+        </div>
+    </section>
     
     <!-- Conteúdo Principal -->
     <main class="container">
@@ -113,8 +155,8 @@
                 <div class="card card-jogo h-100 text-center p-3">
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+1" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 1" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
-                        <h3 class="card-titulo">Acerte a Letra</h3>
-                        <p class="card-text">Descubra as letras do alfabeto de forma divertida e colorida!</p>
+                        <h3 class="card-titulo">Jogo da Forca</h3>
+                        <p class="card-text">Descubra as letras que preenchem os espaços e vença!</p>
                         <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">🔤</span></a>
                     </div>
                 </div>
@@ -125,8 +167,8 @@
                 <div class="card card-jogo h-100 text-center p-3">
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+2" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 2" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
-                        <h3 class="card-titulo">Conta Certa</h3>
-                        <p class="card-text">Aprenda matemática básica com desafios super divertidos!</p>
+                        <h3 class="card-titulo">Snake</h3>
+                        <p class="card-text">Aprenda matemática básica formando contas com uma serpente!</p>
                         <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">➕</span></a>
                     </div>
                 </div>
@@ -137,9 +179,9 @@
                 <div class="card card-jogo h-100 text-center p-3">
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+3" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 3" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
-                        <h3 class="card-titulo">Quebra-Cabeça</h3>
-                        <p class="card-text">Monte imagens incríveis e desenvolva seu raciocínio!</p>
-                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">🧩</span></a>
+                        <h3 class="card-titulo">Rio Frogger</h3>
+                        <p class="card-text">Aprenda as regras das ruas e do meio ambiente com um sapo!</p>
+                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">🚦</span></a>
                     </div>
                 </div>
             </div>
@@ -149,9 +191,9 @@
                 <div class="card card-jogo h-100 text-center p-3">
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+4" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 4" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
-                        <h3 class="card-titulo">Memória das Cores</h3>
-                        <p class="card-text">Encontre os pares iguais e treine sua memória com cores!</p>
-                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji"></span></a>
+                        <h3 class="card-titulo">Jogo da Memória</h3>
+                        <p class="card-text">Encontre os pares iguais e treine sua memória com matemática e português!</p>
+                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">🕹️</span></a>
                     </div>
                 </div>
             </div>
@@ -161,8 +203,8 @@
         <div class="row mt-5">
             <div class="col-12 text-center">
                 <div class="p-4 rounded" style="background-color: var(--cor-clara);">
-                    <h2 class="subtitulo mb-3">Por que aprender brincando?</h2>
-                    <p class="lead" style="font-family: 'Patrick Hand', cursive;">Quando nos divertimos, aprendemos sem perceber! Nossos jogos foram criados especialmente para crianças curiosas que adoram descobrir coisas novas todos os dias.</p>
+                    <h2 class="subtitulo mb-3">Por que aprender jogando?</h2>
+                    <p class="lead" style="font-family: 'Patrick Hand', cursive;">Aprender é bom, e jogar também, e hoje é tudo digital, sendo assim, nada melhor para ensinar crianças do que juntar aprendizado com games.</p>
                     <p class="mt-3"><span class="emoji">👧👦</span> <strong>Indicado para crianças de 4 a 10 anos</strong> <span class="emoji">📚🎨</span></p>
                 </div>
             </div>
@@ -172,7 +214,7 @@
     <!-- Rodapé -->
     <footer class="mt-5 py-4 text-center" style="background-color: var(--cor-principal); color: white;">
         <div class="container">
-            <p class="mb-0" style="font-family: 'Comic Neue', cursive;">© 2023 Jogos Educativos Divertidos - Todos os direitos reservados</p>
+            <p class="mb-0" style="font-family: 'Comic Neue', cursive;">© 2025 Learn Games - Todos os direitos reservados</p>
         </div>
     </footer>
     
