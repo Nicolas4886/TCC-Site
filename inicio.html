@@ -83,7 +83,7 @@
         
         .header {
             background: linear-gradient(to right, var(--cor-principal), #CC5200);
-            padding: 40px 0 30px 0; /* Aumentei o padding para o cabeçalho maior */
+            padding: 40px 0 30px 0;
             border-radius: 0 0 20px 20px;
             margin-bottom: 30px;
         }
@@ -115,15 +115,16 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="header text-white text-center mb-5">
+    <header class="header text-white text-center py-4 mb-4">
         <div class="container">
-            <h1 class="titulo-principal display-4 mb-3">Learn Games <span class="emoji">🎮</span></h1>
-            <p class="subtitulo lead">Uma plataforma onde você encontra tanto conhecimento quanto diversão</p>
-
+            <h1 class="titulo-principal display-3 mb-3">Learn Games</h1>
+            <p class="subtitulo lead fs-4 text-white mb-4">
+            Uma plataforma onde você encontra tanto conhecimento quanto diversão
+            </p>
             <!-- Botões do Menu -->
             <div class="d-flex justify-content-center flex-wrap">
-                <a href="#" class="btn btn-menu">Jogos</a>
-                <a href="#" class="btn btn-menu">Sobre</a>
+                <a href="#" class="btn btn-menu">Início</a>
+                <a href="sobre.html" class="btn btn-menu">Sobre</a>
                 <a href="#" class="btn btn-menu">Contato</a>
             </div>
         </div>
@@ -136,16 +137,18 @@
     <section class="container my-4">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="titulo-jogos" style="font-family: 'Comic Neue', cursive; 
-                                              color: #000000; 
-                                              font-size: 1.8rem; 
-                                              font-weight: 700;
-                                              margin-bottom: 0.5rem;">
+                <h2 class="fw-bold fs-2 mb-2 font-comic-neue">
                     Jogos principais
                 </h2>
             </div>
         </div>
     </section>
+    
+    <style>
+        .font-comic-neue {
+            font-family: 'Comic Neue', cursive;
+        }
+    </style>
     
     <!-- Conteúdo Principal -->
     <main class="container">
@@ -156,8 +159,8 @@
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+1" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 1" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
                         <h3 class="card-titulo">Jogo da Forca</h3>
-                        <p class="card-text">Descubra as letras que preenchem os espaços e vença!</p>
-                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">🔤</span></a>
+                        <p class="card-text">Descubra as letras faltantes e vença</p>
+                        <a href="#" class="btn btn-jogar text-white">Jogar</a>
                     </div>
                 </div>
             </div>
@@ -168,8 +171,8 @@
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+2" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 2" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
                         <h3 class="card-titulo">Snake</h3>
-                        <p class="card-text">Aprenda matemática básica formando contas com uma serpente!</p>
-                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">➕</span></a>
+                        <p class="card-text">Aprenda matemática básica com a ajuda de uma serpente</p>
+                        <a href="#" class="btn btn-jogar text-white">Jogar</a>
                     </div>
                 </div>
             </div>
@@ -180,8 +183,8 @@
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+3" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 3" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
                         <h3 class="card-titulo">Rio Frogger</h3>
-                        <p class="card-text">Aprenda as regras das ruas e do meio ambiente com um sapo!</p>
-                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">🚦</span></a>
+                        <p class="card-text">O sapo que ensina sobre trânsito</p>
+                        <a href="#" class="btn btn-jogar text-white">Jogar</a>
                     </div>
                 </div>
             </div>
@@ -192,8 +195,8 @@
                     <img src="https://via.placeholder.com/200x150/FF8C00/FFFFFF?text=Jogo+4" class="card-img-top rounded-circle mx-auto mt-3" alt="Jogo 4" style="width: 150px; height: 150px; object-fit: cover;">
                     <div class="card-body">
                         <h3 class="card-titulo">Jogo da Memória</h3>
-                        <p class="card-text">Encontre os pares iguais e treine sua memória com matemática e português!</p>
-                        <a href="#" class="btn btn-jogar text-white">Jogar Agora <span class="emoji">🕹️</span></a>
+                        <p class="card-text">Encontre os pares iguais e treine sua memória</p>
+                        <a href="#" class="btn btn-jogar text-white">Jogar</a>
                     </div>
                 </div>
             </div>
