@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Games</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-principal: #FF8C00;
+            --cor-secundaria: #CC5200;
+            --cor-clara: #FFD699;
+        }
+        
+        body {
+            background-color: #FFF9F0;
+            font-family: 'Patrick Hand', cursive;
+        }
+        
+        .titulo-principal {
+            font-family: 'Fredoka One', cursive;
+            color: #FF8533;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-size: 2.8rem;
+        }
+        
+        .subtitulo {
+            font-family: 'Comic Neue', cursive;
+            color: white;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .btn-menu {
+            background-color: var(--cor-botao);
+            border: none;
+            font-family: 'Fredoka One', cursive;
+            border-radius: 50px;
+            padding: 10px 25px;
+            color: white;
+            margin: 0 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-menu:hover {
+            background-color: #CC5200;
+            transform: translateY(-2px);
+        }
+        
+        .card-jogo {
+            border-radius: 20px;
+            border: 3px solid var(--cor-principal);
+            transition: transform 0.3s;
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        .card-jogo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255,140,0,0.2);
+        }
+        
+        .card-titulo {
+            font-family: 'Comic Neue', cursive;
+            color: var(--cor-principal);
+        }
+        
+        .btn-jogar {
+            background-color: var(--cor-principal);
+            border: none;
+            font-family: 'Fredoka One', cursive;
+            border-radius: 50px;
+            padding: 8px 20px;
+        }
+        
+        .btn-jogar:hover {
+            background-color: #E67E00;
+        }
+        
+        .header {
+            background: linear-gradient(to right, var(--cor-principal), #CC5200);
+            padding: 40px 0 30px 0; /* Aumentei o padding para o cabeçalho maior */
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .emoji {
+            font-size: 2rem;
+        }
+        
+        .decoracao {
+            position: absolute;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        
+        .decoracao-1 {
+            top: 10%;
+            left: 5%;
+            font-size: 8rem;
+            transform: rotate(15deg);
+        }
+        
+        .decoracao-2 {
+            bottom: 10%;
+            right: 5%;
+            font-size: 8rem;
+            transform: rotate(-15deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header text-white text-center mb-5">
+        <div class="container">
+            <h1 class="titulo-principal display-4 mb-3">Sobre</h1>
+
+            <!-- Botões do Menu -->
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="inicio.html" class="btn btn-menu">Início</a>
+                <a href="sobre.html" class="btn btn-menu">Sobre</a>
+                <a href="#" class="btn btn-menu">Contato</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Decoracoes -->
+    <div class="decoracao decoracao-1">🌟</div>
+    <div class="decoracao decoracao-2">🎲</div>
+
+    <section class="container my-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold fs-2 mb-2" style="font-family: 'Comic Neue', cursive;">
+                    Quem somos?
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+    <p class="px-3 fs-5 text-justify mb-4">
+    Plataforma iniciada em 2025, sendo parte do TCC de um grupo com dois integrantes sendo estes: Nicolas e David, dois estudantes do curso de Desenvolvimento de Sistemas do CEEP, buscando um futuro no projeto de um site de jogos educacionais, que tem por objetivo a melhora na educação de crianças que vivem nessa era tecnológica onde tudo gira em torno da internet, buscamos através desse trabalho, incentivar alunos ao estudo, com algo que toma o tempo de crianças por horas na atualidade: jogos.
+    </p>
+    <p class="px-3 fs-5 mt-3 text-justify">
+       Esses jogos ajudam a melhorar o raciocínio lógico, a formação de palavras, ensinam sobre as leis do trânsito, entre outros.
+    </p>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer class="mt-5 py-4 text-center" style="background-color: var(--cor-principal); color: white;">
+        <div class="container">
+            <p class="mb-0" style="font-family: 'Comic Neue', cursive;">© 2025 Learn Games - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
