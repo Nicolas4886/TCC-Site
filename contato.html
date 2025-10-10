@@ -4,19 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Learn Games - Contato</title>
-        <!-- Bootstrap 5 CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet">
-        <!-- Novas Fontes do Google -->
         <link
             href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;700;800&family=Comic+Neue:wght@700&family=Fredoka+One&family=Patrick+Hand&display=swap"
             rel="stylesheet">
-        <!-- Font Awesome -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <style>
-        /* NOVO SISTEMA DE CORES E DESIGN */
+        /* Cores */
         :root {
             --learn-orange: #FF6B35;
             --learn-teal: #4ECDC4;
@@ -30,7 +27,17 @@
         body {
             background-color: var(--learn-light);
             font-family: 'Patrick Hand', cursive;
-            padding-top: 200px; /* AUMENTADO: Para compensar a altura da navbar */
+            padding-top: 200px; 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .main-content {
+            flex: 1;
+            margin-top: 0;
+            padding-top: 20px;
         }
         
         .titulo-principal {
@@ -52,7 +59,7 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
 
-        /* NAVBAR REDESENHADA - CORRIGIDA */
+        /* Navbar */
         .nav {
             background: var(--learn-gradient);
             padding: 20px 0 15px 0;
@@ -100,13 +107,7 @@
             box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
         }
 
-        /* SEÇÃO PRINCIPAL COM ESPAÇAMENTO CORRIGIDO */
-        .main-content {
-            margin-top: 0; /* REMOVIDO margin-top anterior */
-            padding-top: 20px; /* Adicionado padding interno */
-        }
-
-        /* CARDS DE JOGOS REDESENHADOS */
+        /* Cards dos jogos */
         .card-jogo {
             border-radius: 25px;
             border: none;
@@ -177,7 +178,7 @@
             box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
         }
 
-        /* DECORAÇÕES MELHORADAS */
+        /* Decorações */
         .decoracao {
             position: absolute;
             z-index: -1;
@@ -186,7 +187,7 @@
         }
         
         .decoracao-1 {
-            top: 25%; /* AJUSTADO: Mais para baixo */
+            top: 25%; 
             left: 8%;
             font-size: 6rem;
             color: var(--learn-orange);
@@ -202,7 +203,7 @@
         }
 
         .decoracao-3 {
-            top: 50%; /* AJUSTADO: Mais para baixo */
+            top: 50%; 
             left: 85%;
             font-size: 4rem;
             color: var(--learn-yellow);
@@ -214,7 +215,7 @@
             50% { transform: translateY(-20px) rotate(5deg); }
         }
 
-        /* SEÇÃO DE BENEFÍCIOS REDESENHADA */
+        /* Seção de benefícios */
         .beneficios-section {
             padding: 4rem 0;
             background: linear-gradient(135deg, #FFFCF9 0%, #FFF5E6 100%);
@@ -285,7 +286,7 @@
             line-height: 1.6;
         }
 
-        /* SEÇÃO TÍTULO PRINCIPAL */
+        /* Título principal */
         .section-title {
             font-family: 'Chewy', cursive;
             font-size: 2.5rem;
@@ -296,7 +297,7 @@
             margin-bottom: 1rem;
         }
 
-        /* RODAPÉ REDESENHADO */
+        /* Rodapé */
         footer {
             background: var(--learn-gradient);
             color: white;
@@ -304,6 +305,9 @@
             margin-top: 4rem;
             position: relative;
             overflow: hidden;
+            width: 100%;
+            left: 0;
+            right: 0;
         }
 
         footer::before {
@@ -361,7 +365,7 @@
             color: var(--learn-yellow);
         }
 
-        /* SEÇÃO EXTRA MELHORADA */
+        /* Seção extra*/
         .cta-section {
             background: var(--learn-gradient-light);
             border-radius: 25px;
@@ -393,7 +397,7 @@
             60% {transform: translateY(-5px);}
         }
 
-        /* RESPONSIVIDADE CORRIGIDA */
+        /* Responsividade */
         @media (max-width: 768px) {
             .titulo-principal {
                 font-size: 2.2rem;
@@ -404,7 +408,7 @@
             }
             
             body {
-                padding-top: 220px; /* AUMENTADO para mobile */
+                padding-top: 220px; 
             }
             
             .btn-menu {
@@ -420,11 +424,11 @@
             .decoracao-1,
             .decoracao-2,
             .decoracao-3 {
-                display: none; /* Esconder decorações em mobile para mais espaço */
+                display: none; 
             }
         }
 
-        /* EFEITOS EXTRAS */
+        /* Efeitos extras */
         .pulse {
             animation: pulse 2s infinite;
         }
@@ -444,7 +448,7 @@
             50% { transform: translateY(-10px); }
         }
 
-        /* ESTILOS ESPECÍFICOS PARA A PÁGINA DE CONTATO */
+        /* Estilos página contato */
         .contact-section {
             padding: 3rem 0;
         }
@@ -645,7 +649,7 @@
     </head>
     <body>
 
-        <!-- CABEÇALHO REDESENHADO E CORRIGIDO -->
+        <!-- Cabeçalho -->
         <nav class="nav text-white text-center py-4">
             <div class="container">
                 <h1 class="titulo-principal display-4 mb-2">Contato</h1>
@@ -661,15 +665,15 @@
             </div>
         </nav>
 
-        <!-- DECORAÇÕES MELHORADAS -->
+        <!-- Decorações -->
         <div class="decoracao decoracao-1">🎮</div>
         <div class="decoracao decoracao-2">📚</div>
         <div class="decoracao decoracao-3">🌟</div>
 
-        <!-- CONTEÚDO PRINCIPAL COM ESPAÇAMENTO CORRIGIDO -->
+        <!-- Conteúdo principal -->
         <main class="container main-content">
             
-            <!-- SEÇÃO CONTATO -->
+            <!-- Seção contato -->
             <section class="contact-section">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
@@ -745,7 +749,7 @@
                     </div>
                 </div>
 
-                <!-- Mensagem de Confirmação (inicialmente oculta) -->
+                <!-- Mensagem de Confirmação -->
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="confirmation-message" id="confirmationMessage">
@@ -783,26 +787,9 @@
                     </div>
                 </div>
             </section>
-
-            <!-- SEÇÃO EXTRA REDESENHADA -->
-            <div class="row mt-5">
-                <div class="col-12">
-                    <div class="cta-section text-center">
-                        <h2 class="section-title mb-4">Por que aprender jogando?</h2>
-                        <p class="lead fs-5 mb-4">
-                            Aprender é bom, e jogar também! Em um mundo cada vez mais digital, nada melhor do que unir diversão e educação para criar experiências incríveis de aprendizado.
-                        </p>
-                        <p class="mt-4">
-                            <span class="emoji">👧👦</span>
-                            <strong class="fs-5" style="color: var(--learn-dark);">Indicado para crianças de 5 a 10 anos</strong>
-                            <span class="emoji">📚🎨</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
         </main>
 
-        <!-- RODAPÉ REDESENHADO -->
+        <!-- Rodapé -->
         <footer>
             <div class="container position-relative">
                 <div class="row">

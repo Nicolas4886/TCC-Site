@@ -4,22 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Learn Games - Sobre</title>
-        <!-- Bootstrap 5 CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet">
-        <!-- Novas Fontes do Google -->
         <link
             href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;700;800&family=Comic+Neue:wght@700&family=Fredoka+One&family=Patrick+Hand&display=swap"
             rel="stylesheet">
-        <!-- Ícones do Bootstrap -->
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-        <!-- Font Awesome -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <style>
-        /* NOVO SISTEMA DE CORES E DESIGN */
+        /* Cores */
         :root {
             --learn-orange: #FF6B35;
             --learn-teal: #4ECDC4;
@@ -33,32 +29,32 @@
         body {
             background-color: var(--learn-light);
             font-family: 'Patrick Hand', cursive;
-            padding-top: 200px; /* CORRIGIDO: Igual à página Início */
+            padding-top: 200px; 
         }
         
         .titulo-principal {
             font-family: 'Chewy', cursive;
-            font-size: 3.5rem; /* CORRIGIDO: Igual à página Início */
+            font-size: 3.5rem; 
             background: linear-gradient(45deg, var(--learn-orange), var(--learn-yellow));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 4px 4px 0px rgba(255, 107, 53, 0.2);
-            margin-bottom: 0.5rem; /* CORRIGIDO: Igual à página Início */
+            margin-bottom: 0.5rem; 
         }
         
         .subtitulo {
             font-family: 'Nunito', sans-serif;
-            font-weight: 700; /* CORRIGIDO: Igual à página Início */
+            font-weight: 700;
             color: white;
-            font-size: 1.3rem; /* CORRIGIDO: Igual à página Início */
-            margin-bottom: 1.5rem; /* CORRIGIDO: Igual à página Início */
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem; 
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
 
-        /* NAVBAR REDESENHADA - CORRIGIDA PARA SER IGUAL À PÁGINA INÍCIO */
+        /* Navbar */
         .nav {
             background: var(--learn-gradient);
-            padding: 20px 0 15px 0; /* CORRIGIDO: Igual à página Início */
+            padding: 20px 0 15px 0; 
             border-radius: 0 0 30px 30px;
             position: fixed;
             top: 0;
@@ -86,12 +82,12 @@
             background: rgba(255, 255, 255, 0.2);
             border: 2px solid rgba(255, 255, 255, 0.3);
             font-family: 'Nunito', sans-serif;
-            font-weight: 700; /* CORRIGIDO: Igual à página Início */
-            border-radius: 25px; /* CORRIGIDO: Igual à página Início */
-            padding: 10px 25px; /* CORRIGIDO: Igual à página Início */
+            font-weight: 700; 
+            border-radius: 25px; 
+            padding: 10px 25px; 
             color: white;
-            margin: 0 8px; /* CORRIGIDO: Igual à página Início */
-            font-size: 1rem; /* CORRIGIDO: Igual à página Início */
+            margin: 0 8px; 
+            font-size: 1rem; 
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             backdrop-filter: blur(10px);
         }
@@ -99,17 +95,17 @@
         .btn-menu:hover {
             background: rgba(255, 255, 255, 0.3);
             border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-3px) scale(1.05); /* CORRIGIDO: Igual à página Início */
-            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2); /* CORRIGIDO: Igual à página Início */
+            transform: translateY(-3px) scale(1.05); 
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2); 
         }
 
-        /* CONTEÚDO PRINCIPAL COM MAIS ESPAÇO */
+        /* Conteúdo principal */
         .main-content {
             margin-top: 0;
-            padding-top: 60px; /* AUMENTADO: De 40px para 60px para mais espaçamento */
+            padding-top: 60px; 
         }
 
-        /* SEÇÃO TÍTULO PRINCIPAL */
+        /* Título principal */
         .section-title {
             font-family: 'Chewy', cursive;
             font-size: 2.5rem;
@@ -131,7 +127,7 @@
             padding-left: 1rem;
         }
 
-        /* CARDS DE EQUIPE REDESENHADOS */
+        /* Cards de equipe */
         .team-card {
             background: white;
             border-radius: 25px;
@@ -203,7 +199,7 @@
             font-size: 1rem;
         }
 
-        /* SEÇÃO MISSÃO REDESENHADA */
+        /* Seção missão */
         .mission-section {
             background: var(--learn-gradient-light);
             border-radius: 25px;
@@ -237,7 +233,7 @@
             display: inline-block;
         }
 
-        /* SEÇÃO CTA REDESENHADA */
+        /* Seção CTA*/
         .cta-section {
             background: var(--learn-gradient);
             border-radius: 25px;
@@ -290,7 +286,7 @@
             box-shadow: 0 15px 30px rgba(255, 255, 255, 0.2);
         }
 
-        /* DECORAÇÕES REPOSICIONADAS */
+        /* Decorações */
         .decoracao {
             position: absolute;
             z-index: -1;
@@ -299,7 +295,7 @@
         }
         
         .decoracao-1 {
-            top: 30%; /* AJUSTADO: Mais para baixo */
+            top: 30%; 
             left: 8%;
             font-size: 6rem;
             color: var(--learn-orange);
@@ -307,7 +303,7 @@
         }
         
         .decoracao-2 {
-            bottom: 25%; /* AJUSTADO: Mais para baixo */
+            bottom: 25%; 
             right: 8%;
             font-size: 6rem;
             color: var(--learn-teal);
@@ -315,7 +311,7 @@
         }
 
         .decoracao-3 {
-            top: 55%; /* AJUSTADO: Mais para baixo */
+            top: 55%; 
             left: 85%;
             font-size: 4rem;
             color: var(--learn-yellow);
@@ -327,7 +323,7 @@
             50% { transform: translateY(-20px) rotate(5deg); }
         }
 
-        /* TEXTOS E PARÁGRAFOS */
+        /* Textos */
         .content-text {
             font-family: 'Patrick Hand', cursive;
             font-size: 1.2rem;
@@ -344,7 +340,7 @@
             transition: background-size 0.3s ease;
         }
 
-        /* RODAPÉ REDESENHADO */
+        /* Rodapé */
         footer {
             background: var(--learn-gradient);
             color: white;
@@ -409,7 +405,7 @@
             color: var(--learn-yellow);
         }
 
-        /* RESPONSIVIDADE CORRIGIDA */
+        /* Responsividade */
         @media (max-width: 768px) {
             .titulo-principal {
                 font-size: 2.2rem;
@@ -420,17 +416,17 @@
             }
             
             body {
-                padding-top: 220px; /* CORRIGIDO: Igual à página Início */
+                padding-top: 220px;
             }
             
             .btn-menu {
-                margin: 5px; /* CORRIGIDO: Igual à página Início */
-                padding: 8px 16px; /* CORRIGIDO: Igual à página Início */
-                font-size: 0.9rem; /* CORRIGIDO: Igual à página Início */
+                margin: 5px; 
+                padding: 8px 16px; 
+                font-size: 0.9rem; 
             }
 
             .nav {
-                padding: 15px 0 10px 0; /* CORRIGIDO: Igual à página Início */
+                padding: 15px 0 10px 0; 
             }
 
             .mission-section,
@@ -446,11 +442,11 @@
             }
 
             .main-content {
-                padding-top: 40px; /* Ajustado para mobile */
+                padding-top: 40px; 
             }
         }
 
-        /* EFEITOS EXTRAS */
+        /* Efeitos extras */
         .pulse {
             animation: pulse 2s infinite;
         }
@@ -473,7 +469,7 @@
     </style>
     </head>
     <body>
-        <!-- CABEÇALHO REDESENHADO E CORRIGIDO PARA SER IGUAL À PÁGINA INÍCIO -->
+        <!-- Cabeçalho -->
         <nav class="nav text-white text-center py-4">
             <div class="container">
                 <h1 class="titulo-principal display-4 mb-2">Sobre Nós</h1>
@@ -489,15 +485,15 @@
             </div>
         </nav>
 
-        <!-- DECORAÇÕES REPOSICIONADAS -->
+        <!-- Decorações -->
         <div class="decoracao decoracao-1">🎮</div>
         <div class="decoracao decoracao-2">📚</div>
         <div class="decoracao decoracao-3">🌟</div>
 
-        <!-- CONTEÚDO PRINCIPAL COM MAIS ESPAÇO -->
+        <!-- Conteúdo principal -->
         <main class="container main-content">
             
-            <!-- SEÇÃO QUEM SOMOS -->
+            <!-- Seção quem somos -->
             <section class="mb-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
@@ -522,7 +518,7 @@
                 </div>
             </section>
 
-            <!-- NOSSA EQUIPE -->
+            <!-- Nossa equipe -->
             <section class="mb-5">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
@@ -554,7 +550,7 @@
                 </div>
             </section>
 
-            <!-- NOSSA MISSÃO -->
+            <!-- Nossa missão -->
             <section class="mission-section">
                 <div class="row justify-content-center">
                     <div class="col-lg-10 text-center">
@@ -570,7 +566,7 @@
                 </div>
             </section>
 
-            <!-- CONVITE FINAL -->
+            <!-- Convite final -->
             <section class="cta-section">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -586,7 +582,7 @@
             </section>
         </main>
 
-        <!-- RODAPÉ REDESENHADO -->
+        <!-- Rodapé -->
         <footer>
             <div class="container position-relative">
                 <div class="row">
