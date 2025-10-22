@@ -410,6 +410,136 @@
             margin-bottom: 1rem;
         }
 
+        /* Seção de Comentários */
+        .comentarios-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #FFFCF9 0%, #FFF5E6 100%);
+            border-radius: 30px;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comentarios-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .comentario-card {
+            background: white;
+            border-radius: 20px;
+            border: none;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.1);
+        }
+
+        .comentario-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--learn-gradient);
+        }
+        
+        .comentario-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.15);
+        }
+        
+        .comentario-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--learn-orange), var(--learn-yellow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .comentario-titulo {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            color: var(--learn-dark);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .comentario-form {
+            margin-top: 2rem;
+        }
+
+        .comentario-input {
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+            padding: 15px;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .comentario-input:focus {
+            border-color: var(--learn-orange);
+            box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+        }
+
+        .btn-comentar {
+            background: var(--learn-gradient);
+            border: none;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            border-radius: 25px;
+            padding: 12px 30px;
+            color: white;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn-comentar:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .comentarios-lista {
+            margin-top: 2rem;
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .comentario-item {
+            background: var(--learn-gradient-light);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--learn-orange);
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .comentario-data {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 0.5rem;
+            font-family: 'Nunito', sans-serif;
+        }
+
         /* Rodapé */
         footer {
             background: var(--learn-gradient);
@@ -721,7 +851,7 @@
                             <div class="contador-avaliacoes"
                                 id="contador-jogo-memoria">(0 avaliações)</div>
 
-                            <a target="_blank"
+                            <a 
                                 href="https://www.educaplay.com/learning-resources/24976245-alfabeto_3d_memoria_das_letras.html"
                                 class="btn btn-jogar text-white mt-2">Jogar
                                 Agora</a>
@@ -900,6 +1030,46 @@
                 </div>
             </section>
 
+            <!-- Comentários -->
+            <section class="comentarios-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center mb-5">
+                            <h2 class="section-title">
+                                Comentários
+                            </h2>
+                            <p class="lead fs-5">Deixe seus comentários sobre o site e os jogos</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="comentario-card">
+                                <div class="comentario-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h4 class="comentario-titulo">Compartilhe sua opinião</h4>
+                                <p>Escreva abaixo seus comentários, sugestões ou observações sobre o site e os jogos educativos.</p>
+                                
+                                <form class="comentario-form" id="comentarioForm">
+                                    <div class="mb-3">
+                                        <textarea class="form-control comentario-input" id="comentarioTexto" 
+                                                  placeholder="Digite seu comentário aqui..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-comentar">
+                                        <i class="fas fa-paper-plane me-2"></i>Enviar Comentário
+                                    </button>
+                                </form>
+
+                                <div class="comentarios-lista" id="comentariosLista">
+                                    <!-- Comentários serão adicionados aqui via JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Seção extra -->
             <div class="row mt-5">
                 <div class="col-12">
@@ -998,6 +1168,9 @@
             
             // Sistema de Avaliação por Estrelas
             inicializarSistemaAvaliacao();
+            
+            // Sistema de Comentários
+            inicializarSistemaComentarios();
         });
 
         // Sistema de Avaliação por Estrelas
@@ -1094,6 +1267,73 @@
             } else {
                 estrelas.forEach(estrela => estrela.classList.remove('ativa'));
             }
+        }
+
+        // Sistema de Comentários
+        function inicializarSistemaComentarios() {
+            const form = document.getElementById('comentarioForm');
+            const lista = document.getElementById('comentariosLista');
+            
+            // Carregar comentários do localStorage
+            const comentarios = JSON.parse(localStorage.getItem('comentarios-learn-games')) || [];
+            
+            // Exibir comentários existentes
+            exibirComentarios(comentarios);
+            
+            // Adicionar evento de submit ao formulário
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const texto = document.getElementById('comentarioTexto').value.trim();
+                
+                if (texto) {
+                    // Criar novo comentário
+                    const novoComentario = {
+                        id: Date.now(),
+                        texto: texto,
+                        data: new Date().toLocaleString('pt-BR')
+                    };
+                    
+                    // Adicionar ao array e salvar
+                    comentarios.unshift(novoComentario);
+                    localStorage.setItem('comentarios-learn-games', JSON.stringify(comentarios));
+                    
+                    // Atualizar a lista
+                    exibirComentarios(comentarios);
+                    
+                    // Limpar o formulário
+                    form.reset();
+                    
+                    // Feedback visual
+                    const btn = form.querySelector('button');
+                    const originalText = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-check me-2"></i>Comentário Enviado!';
+                    btn.disabled = true;
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.disabled = false;
+                    }, 2000);
+                }
+            });
+        }
+
+        function exibirComentarios(comentarios) {
+            const lista = document.getElementById('comentariosLista');
+            
+            if (comentarios.length === 0) {
+                lista.innerHTML = '<p class="text-center text-muted">Nenhum comentário ainda. Seja o primeiro a comentar!</p>';
+                return;
+            }
+            
+            lista.innerHTML = comentarios.map(comentario => `
+                <div class="comentario-item">
+                    <p class="mb-2">${comentario.texto}</p>
+                    <div class="comentario-data">
+                        <i class="fas fa-clock me-1"></i>${comentario.data}
+                    </div>
+                </div>
+            `).join('');
         }
         </script>
     </body>
