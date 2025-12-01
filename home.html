@@ -103,7 +103,7 @@
             padding-top: 20px;
         }
 
-        /* Cards-jogos */
+        /* Cards jogos */
         .card-jogo {
             border-radius: 25px;
             border: none;
@@ -172,6 +172,43 @@
         .btn-jogar:hover {
             transform: translateY(-2px) scale(1.05);
             box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Decorações */
+        .decoracao {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.15;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .decoracao-1 {
+            top: 30%; 
+            left: 8%;
+            font-size: 6rem;
+            color: var(--learn-orange);
+            animation-delay: 0s;
+        }
+        
+        .decoracao-2 {
+            bottom: 25%; 
+            right: 8%;
+            font-size: 6rem;
+            color: var(--learn-teal);
+            animation-delay: 2s;
+        }
+
+        .decoracao-3 {
+            top: 55%; 
+            left: 85%;
+            font-size: 4rem;
+            color: var(--learn-yellow);
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
         }
 
         /* Sistema de avaliação */
@@ -650,6 +687,12 @@
 
             .nav {
                 padding: 15px 0 10px 0;
+            }
+
+            .decoracao-1,
+            .decoracao-2,
+            .decoracao-3 {
+                display: none;
             }
 
             .dropdown-btn {
